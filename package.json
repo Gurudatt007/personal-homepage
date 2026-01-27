@@ -1,0 +1,14 @@
+{
+  "name": "personal_homepage",
+  "version": "1.0.0",
+  "description": "Personal homepage built with vanilla HTML, CSS, and ES6 modules.",
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  }
+}

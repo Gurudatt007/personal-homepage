@@ -1,0 +1,101 @@
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #555555;
+  --border: #dddddd;
+  --card: #f6f6f6;
+}
+
+body.dark {
+  --bg: #0f0f12;
+  --text: #f2f2f2;
+  --muted: #c9c9c9;
+  --border: #2a2a33;
+  --card: #17171c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.site-header {
+  display: flex; /* ✅ flex requirement */
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.main-nav {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.main-nav a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.main-nav a:hover {
+  background: var(--card);
+  border-color: var(--border);
+}
+
+.theme-button {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+.hero {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.hero h2 {
+  margin: 0 0 8px 0;
+}
+
+.hero p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+
+  .main-nav {
+    width: 100%;
+    margin-left: 0;
+  }
+}
