@@ -10,7 +10,7 @@ https://northeastern.instructure.com/courses/245751
 Build a front-end only personal homepage using vanilla HTML5, CSS3, and ES6+ JavaScript modules. No frameworks and no jQuery.
 
 ## Live Demo
-(To be added after GitHub Pages deployment)
+https://lizik01.github.io/personal-homepage/
 
 ## Pages
 - `index.html` — Home
