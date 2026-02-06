@@ -89,6 +89,14 @@ body {
   line-height: 1.5;
 }
 
+# added a CSS for class grid-section
+.grid-section {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
 @media (max-width: 640px) {
   .site-header {
     flex-wrap: wrap;
